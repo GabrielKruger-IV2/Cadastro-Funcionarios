@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Form</title>
+
+            <link rel="stylesheet" type="text/css" href="/style-guide/css/fluig-style-guide.min.css">
+            <script src="/resources/js/jquery/jquery.js"></script>
+            <script src="/resources/js/jquery/jquery-ui.min.js"></script>
+            <script src="/resources/js/mustache/mustache-min.js"></script>
+            <script src="/style-guide/js/fluig-style-guide.min.js"></script>
+
+            <!-- CUSTOM -->
+            <link href="/style-guide/css/fluig-style-guide-filter.min.css" rel="stylesheet" type="text/css">
+            <link href="/style-guide/css/fluig-style-guide-ratingstars.min.css" rel="stylesheet" type="text/css">
+            <script src="/style-guide/js/fluig-style-guide-filter.min.js"></script>
+            <script src="/style-guide/js/fluig-style-guide-ratingstars.min.js"></script>
+
+            <link href='/webdesk/customresources?cid=1&resourceName=temaFormulario/0.css' type='text/css' rel='stylesheet' />
+		</head>
+        <body class="fluig-style-guide">
+			
+			<form class="totvs-form grid vertical create-form-components ui-sortable t0" name="createFormComponents" style="padding-left: 10px; padding-right: 10px;"><h1 class="title-form-application">Formulário de Kruger_CadastroFuncionario</h1>
+			<div class="form-field" data-type="textbox" data-show-properties="" data-field-name="txt_nome"><div class="form-input"><div class="form-group"><label>Nome completo</label><input type="text" class="form-control" name="txt_nome" value="" placeholder="Maria da Silva" data-size="big"></div></div></div><div class="form-field" data-type="textbox" data-show-properties="" data-field-name="txt_CPF"><div class="form-input"><div class="form-group"><label>CPF</label><input type="text" class="form-control" name="txt_CPF" value="" placeholder="123.456.789-00" data-size="big" mask="000.000.000-00" maxlength="14" data-only-numbers="true"></div></div></div><div class="form-field" data-type="textbox" data-show-properties="" data-field-name="txt_RG" style="position: relative; left: 0px; top: 0px;"><div class="form-input"><div class="form-group"><label>RG</label><input type="text" class="form-control" name="txt_RG" value="" placeholder="12.345.678-9" data-size="big"></div></div></div><div class="form-field" data-type="date" data-show-properties="" data-field-name="dt_nascimento"><div class="form-input"><div class="form-group"><label>Data de Nascimento</label><input id="date3" type="text" class="form-control" name="dt_nascimento" data-date=""></div></div></div><div class="form-field" data-type="combo" data-show-properties="" data-field-name="cmb_estadoCivil" style="position: relative; left: 0px; top: 0px;"><div class="form-input"><div class="form-group"><label>Label combo</label><select class="form-control" name="cmb_estadoCivil"><option value="Solteira(o)">Solteira(o)</option><option value="Casada(o)">Casada(o)</option></select></div></div></div><div class="form-field" data-type="combo" data-show-properties="" data-field-name="cmb_escolaridad" style="position: relative; left: 0px; top: 0px;"><div class="form-input"><div class="form-group"><label>Escolaridade</label><select class="form-control" name="cmb_escolaridad"><option value="Ensino fundamental incompleto">Ensino fundamental incompleto</option><option value="Ensino fundamental completo">Ensino fundamental completo</option><option value="Ensino médio incompleto">Ensino médio incompleto</option><option value="Ensino médio completo">Ensino médio completo</option><option value="Superior completo (ou graduação)">Superior completo (ou graduação)</option><option value="Pós-graduação">Pós-graduação</option><option value="Mestrado">Mestrado</option><option value="Doutorado">Doutorado</option><option value="Pós-Doutorado">Pós-Doutorado</option></select></div></div></div><div class="form-field" data-type="textbox" data-show-properties="" data-field-name="txt_cep"><div class="form-input"><div class="form-group"><label>CEP</label><input type="text" class="form-control" name="txt_cep" value="" placeholder="" data-size="big" mask="00000-000" maxlength="9" data-only-numbers="true"></div></div></div><div class="form-field" data-type="textbox" data-show-properties="" data-field-name="txt_Rua"><div class="form-input"><div class="form-group"><label>Rua</label><input type="text" class="form-control" name="txt_Rua" value="" placeholder="" data-size="big"></div></div></div><div class="form-field" data-type="number" data-show-properties="" data-field-name="num_endereco" style="position: relative; left: 0px; top: 0px;"><div class="form-input"><div class="form-group"><label>Numero</label><input type="number" class="form-control" name="num_endereco" value="" placeholder="" min="0" data-size="big" data-only-numbers=""></div></div></div><div class="form-field" data-type="textbox" data-show-properties="" data-field-name="txt_bairro"><div class="form-input"><div class="form-group"><label>Bairro</label><input type="text" class="form-control" name="txt_bairro" value="" placeholder="" data-size="big"></div></div></div><div class="form-field" data-type="textbox" data-show-properties="" data-field-name="txt_cidade" style="position: relative; left: 0px; top: 0px;"><div class="form-input"><div class="form-group"><label>Cidade</label><input type="text" class="form-control" name="txt_cidade" value="" placeholder="" data-size="big"></div></div></div><div class="form-field" data-type="textbox" data-show-properties="" data-field-name="txt_Estado"><div class="form-input"><div class="form-group"><label>Estado</label><input type="text" class="form-control" name="txt_Estado" value="" placeholder="" data-size="big"></div></div></div><div class="form-field" data-type="radio" data-show-properties="" data-field-name="rd_validacao">
+		
+		
+		<div class="form-input"><div class="form-group">
+		<label>Analise do pedido</label>
+		<div class="radio-options"><div class="radio">
+		<label><input type="radio" name="rd_validacao" value="Aprovado">Aprovado</label>
+	</div><div class="radio">
+		<label><input type="radio" name="rd_validacao" value="Recusado">Recusado</label>
+	</div></div>
+	</div></div>
+	</div></form>
+		
+
+			<script type="text/javascript">
+				var keyDown = false, ctrl = 17, vKey = 86, Vkey = 118; 
+				  
+				$(document).keydown(function (e) {
+					if (e.keyCode == ctrl) keyDown = true;
+				}).keyup(function (e) {
+					if (e.keyCode == ctrl) keyDown = false;
+				});
+				
+				$('[data-only-numbers]').on('keypress', function (e) {
+				    if (!e) {
+					    var e = window.event;
+					}
+					
+				    if (e.keyCode > 0 && e.which == 0) {
+				    	 return true;
+					}
+					
+				    if (e.keyCode) {
+				        code = e.keyCode;
+					} else if (e.which) {
+				    	code = e.which;
+					}
+
+					if(code == 46) {
+						return true;
+					}
+					
+				    var character = String.fromCharCode(code);
+				    if (character == '\b' || character == ' ' || character == '\t') {
+				    	 return true;
+					}
+				    if (keyDown && (code == vKey || code == Vkey)) {
+				    	return (character);
+					} else  {
+						return (/[0-9]$/.test(character));
+					}
+				}).on('focusout', function (e) {
+				    var $this = $(this);
+					if($this.val() == "") {
+						return true;
+					}
+				    $this.val($this.val().replace(/[^0-9\.]/g, ''));
+				}).on('paste', function (e) {
+				    var $this = $(this);
+				    setTimeout(function () {
+				        $this.val($this.val().replace(/[^0-9\.]/g, ''));
+				    }, 5);
+				 });				
+
+				
+
+				$('.create-form-components').on('keyup', 'input[required="required"][type="text"], input[required="required"][type="number"], input[required="required"][type="date"], textarea[required="required"]', function(){
+					validationFieldsForm($(this), $(this).parents('.form-field').data('type'));
+				});
+
+				$('.create-form-components').on('change', 'input[required="required"][type="checkbox"], input[required="required"][type="radio"], select[required="required"]', function(){
+					validationFieldsForm($(this), $(this).parents('.form-field').data('type'));
+				});
+
+				function validationFieldsForm(field, type){
+					if(type === "checkbox" || type === "radio"){
+						if(!field.is(':checked')){
+							field.parents('.form-field').addClass('required');
+						}else{
+							field.parents('.form-field').removeClass('required');
+						}
+					}else{
+						if(!field.val().trim()){
+							field.parents('.form-field').addClass('required');
+						}else{
+							field.parents('.form-field').removeClass('required');
+						}
+					}
+				}
+
+				var $zoomPreview = $(".zoom-preview");
+				if ($zoomPreview.length) {
+                    $zoomPreview.parent().removeClass("input-group");
+                    $zoomPreview.remove();
+                }
+
+				var ratings = $(".rating");
+				if (ratings.length > 0) ratingStars(ratings);
+				function ratingStars(stars) {
+					$.each(stars, function(i, obj) {
+                        var field = $(this).closest(".form-group").find(".rating-value");
+						var tgt = $(obj);
+						tgt.html("");
+						var rating = FLUIGC.stars(tgt, { value: field.val() });
+                        rating.on("click", function(o) {
+                            field.val($(this).index() + 1);
+                        });
+					});
+				}
+
+				$.each($("[data-date]"), function(i, o) {
+                    var id = $(o).attr("id");
+					FLUIGC.calendar("#" + id);
+				});
+
+				$(document).ready(function() {
+					$.each($("[data-date]"), function(i, o) {
+	                    var id = $(o).attr("id");
+	                    if($("#" + id).attr("readonly")) {
+	                    	$("#" + id).data('DateTimePicker').disable();
+	                    }
+					});
+				});
+			</script>
+		</body>
+	</html>

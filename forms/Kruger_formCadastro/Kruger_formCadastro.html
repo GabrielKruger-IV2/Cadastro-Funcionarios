@@ -1,0 +1,114 @@
+    <html>
+
+    <head>
+        <link type="text/css" rel="stylesheet" href="/style-guide/css/fluig-style-guide.min.css" />
+        <script type="text/javascript" src="/portal/resources/js/jquery/jquery.js"></script>
+        <script type="text/javascript" src="/portal/resources/js/jquery/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="/portal/resources/js/mustache/mustache-min.js"></script>
+        <script type="text/javascript" src="/style-guide/js/fluig-style-guide.min.js" charset="utf-8"></script>
+    </head>
+
+    <body>
+        <div class="fluig-style-guide">
+            <form name="form" role="form">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><i class="fluigicon fluigicon-user icon-md"></i>Funcionario</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label for="nome">Nome</label>
+                                <input type="text" name="nome" id="nome" class="form-control">
+                            </div>
+
+                            <div class="form-group col-md-3">
+                                <label for="cpf">CPF</label>
+                                <input type="cpf" name="cpf" id="cpf" class="form-control" mask="000.000.000-00">
+                            </div>
+
+                            <div class="form-group col-md-3">
+                                <label for="rg">RG</label>
+                                <input type="text" name="rg" id="rg" class="form-control" mask="00.000.000-0">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-2">
+                                <label for="estadoCivil">Estado civil</label>
+                                <div class="radio">
+                                    <label><input type="radio" name="estadoCivil" id="estadoCivil"
+                                            value="solt">Solteiro(a)</label>
+                                    <label><input type="radio" name="estadoCivil" id="estadoCivil"
+                                            value="casad">Casado(a)</label>
+                                </div>
+                            </div>
+
+                            <div class="form-group col-md-2">
+                                <label for="dtNasc">Data de Nascimento</label>
+                                <input type="text" name="dtNasc" id="dtNasc" class="form-control" mask="00/00/0000">
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="escolaridade">Escolaridade</label>
+                                <select name="escolaridade" id="escolaridade" class="form-control">
+                                    <option value="0" selected disabled hidden>Selecione a escolaridade</option>
+                                    <option value="analf">Analfabeto</option>
+                                    <option value="EnFunI">Ensino fundamental incompleto:</option>
+                                    <option value="EnFunC">Ensino fundamental completo:</option>
+                                    <option value="EnMedI">Ensino médio incompleto:</option>
+                                    <option value="EnMedC">Ensino médio completo</option>
+                                    <option value="EnSupC">Superior completo (ou graduação)</option>
+                                    <option value="posGrad">Pós-graduação</option>
+                                    <option value="mest">Mestrado</option>
+                                    <option value="dout">Doutorado</option> 
+                                    <option value="posDout">Pós-Doutorado</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><i
+                                class="fluigicon fluigicon-map-marker icon-md"></i>Endereço</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="form-group col-md-2">
+                                <label for="cep">CEP</label>
+                                <input type="text" name="cep" id="cep" class="form-control" mask="00000-000">
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="logradouro">Logradouro</label>
+                                <input type="text" name="logradouro" id="logradouro" class="form-control">
+                            </div>
+                            <div class="form-group col-md-1">
+                                <label for="numero">Numero</label>
+                                <input type="text" name="numero" id="numero" class="form-control">
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="bairro">Bairro</label>
+                                <input type="text" name="bairro" id="bairro" class="form-control">
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="cidade">Cidade</label>
+                                <input type="text" name="cidade" id="cidade" class="form-control">
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="estado">Estado</label>
+                                <input type="text" name="estado" id="estado" class="form-control">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </form>
+        </div>
+    </body>
+    <script src="cep.js"></script>
+    <script type="text/javascript">
+        var calendarNascimento = FLUIGC.calendar("#dtNasc")
+    </script>
+
+    </html>
